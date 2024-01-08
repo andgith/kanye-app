@@ -25,3 +25,17 @@ Visit http://localhost:8000 in your browser.
 ```bash
 php artisan test
 ```
+
+## Usage
+
+### Get quotes
+```bash
+GET /api/v1/quotes
+```
+
+### Refresh quotes
+```bash
+GET /api/v1/quotes/refresh
+```
+
+Note: This will only work if you have an API key set in your .env file and include the key as a `X-API-KEY` header with your request.
